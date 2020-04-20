@@ -1,0 +1,1076 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap");
+/* line 1, /home/fedor/html/html_practics_1/#source/scss/null.scss */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px; }
+
+/* line 6, /home/fedor/html/html_practics_1/#source/scss/null.scss */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 13, /home/fedor/html/html_practics_1/#source/scss/null.scss */
+:focus,
+:active {
+  outline: none; }
+
+/* line 17, /home/fedor/html/html_practics_1/#source/scss/null.scss */
+a:focus,
+a:active {
+  outline: none; }
+
+/* line 21, /home/fedor/html/html_practics_1/#source/scss/null.scss */
+aside,
+nav,
+footer,
+header,
+section {
+  display: block; }
+
+/* line 28, /home/fedor/html/html_practics_1/#source/scss/null.scss */
+html,
+body {
+  height: 100%;
+  min-width: 320px; }
+
+/* line 33, /home/fedor/html/html_practics_1/#source/scss/null.scss */
+body {
+  line-height: 1;
+  font-family: "Lato";
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+/* line 40, /home/fedor/html/html_practics_1/#source/scss/null.scss */
+input,
+button,
+textarea {
+  font-family: "Lato"; }
+
+/* line 45, /home/fedor/html/html_practics_1/#source/scss/null.scss */
+input::-ms-clear {
+  display: none; }
+
+/* line 48, /home/fedor/html/html_practics_1/#source/scss/null.scss */
+button {
+  cursor: pointer; }
+
+/* line 51, /home/fedor/html/html_practics_1/#source/scss/null.scss */
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+/* line 55, /home/fedor/html/html_practics_1/#source/scss/null.scss */
+a,
+a:visited {
+  text-decoration: none; }
+
+/* line 59, /home/fedor/html/html_practics_1/#source/scss/null.scss */
+a:hover {
+  text-decoration: none; }
+
+/* line 62, /home/fedor/html/html_practics_1/#source/scss/null.scss */
+ul li {
+  list-style: none; }
+
+/* line 65, /home/fedor/html/html_practics_1/#source/scss/null.scss */
+img {
+  vertical-align: top; }
+
+/* line 68, /home/fedor/html/html_practics_1/#source/scss/null.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit; }
+
+/* line 32, /home/fedor/html/html_practics_1/#source/scss/style.scss */
+body {
+  color: #000;
+  font-size: 14px; }
+  /* line 35, /home/fedor/html/html_practics_1/#source/scss/style.scss */
+  body.lock {
+    overflow: hidden; }
+
+/* line 42, /home/fedor/html/html_practics_1/#source/scss/style.scss */
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden; }
+
+/* line 50, /home/fedor/html/html_practics_1/#source/scss/style.scss */
+.container {
+  max-width: 1130px;
+  padding: 0px 15px; }
+
+/* line 3, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+.form-row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+  margin: 0px -15px; }
+
+/* line 4, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+.form__column {
+  padding: 0px 15px; }
+
+/* line 10, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+.btn {
+  display: inline-block;
+  padding: 0px 0px; }
+  /* line 14, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .btn.fw {
+    width: 100%; }
+
+/* line 19, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+.select-block {
+  position: relative; }
+
+/* line 20, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+.select__label {
+  z-index: 2;
+  position: absolute;
+  top: -8px;
+  background-color: #f7f7f7;
+  padding: 0 5px;
+  color: #979797;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  left: 20px; }
+
+/* line 21, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+.select {
+  position: relative;
+  cursor: pointer; }
+  /* line 22, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .select .select-title {
+    z-index: 1;
+    width: 100%;
+    height: 55px;
+    border: 1px solid #dedede;
+    position: relative;
+    background-color: #fff; }
+  /* line 28, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .select .select-title__arrow {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 45px;
+    height: 100%;
+    background: url("../img/icons/select-arrow.svg") center no-repeat; }
+  /* line 32, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .select .select-title__value {
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 53px;
+    display: block;
+    overflow: hidden;
+    padding: 0 45px 0 25px;
+    white-space: nowrap;
+    text-transform: none;
+    text-overflow: ellipsis; }
+  /* line 38, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .select .select-options {
+    position: absolute;
+    z-index: 10;
+    top: 54px;
+    display: none;
+    overflow: hidden;
+    min-width: 100%;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    padding: 10px 20px 10px 25px; }
+  /* line 46, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .select .select-options-scroll {
+    max-height: 80px;
+    overflow: auto; }
+  /* line 47, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .select .select-options-list {
+    padding: 0px 0px 0px 0px; }
+  /* line 48, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .select .select-options__value {
+    color: #000;
+    font-size: 20px;
+    margin: 0px 0px 15px 0px; }
+    /* line 51, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+    .select .select-options__value:last-child {
+      margin: 0px 0px 0px 0px; }
+    /* line 52, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+    .select .select-options__value:hover {
+      color: #000; }
+
+/* line 58, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+input[type=text], input[type=email], input[type=tel], textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+/* line 59, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+.input {
+  border-radius: 0 !important;
+  width: 100%;
+  display: block;
+  padding: 0px 20px; }
+
+/* line 67, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+textarea.input {
+  resize: none;
+  padding: 0px 0px; }
+
+/* line 74, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+.check {
+  position: relative;
+  padding-left: 25px;
+  color: #5f5f5f;
+  line-height: 18px;
+  cursor: pointer; }
+  /* line 75, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .check input {
+    display: none; }
+  /* line 76, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .check:before {
+    content: '';
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #a3a3a3;
+    position: absolute; }
+  /* line 84, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .check.active:before {
+    background: url("../img/icons/check.png") center no-repeat; }
+
+/* line 92, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+.option {
+  position: relative;
+  cursor: pointer;
+  padding-left: 25px;
+  line-height: 16px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 300; }
+  /* line 93, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .option:last-child {
+    margin-bottom: 0px; }
+  /* line 94, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .option input {
+    display: none; }
+  /* line 95, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .option:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    content: '';
+    border: 1px solid #7f7f7f;
+    border-radius: 50%; }
+  /* line 97, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .option.active:before {
+    background: url("../img/icons/option.png") center no-repeat; }
+
+/* line 103, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+.rating-block {
+  display: table;
+  font-size: 0; }
+
+/* line 104, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+.rating {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle; }
+  /* line 105, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .rating.edit .star {
+    cursor: pointer; }
+  /* line 106, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .rating .star {
+    width: 17px;
+    height: 14px;
+    display: inline-block;
+    position: relative;
+    z-index: 3; }
+
+/* line 108, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+.rating__line {
+  position: absolute;
+  width: 85px;
+  height: 14px;
+  top: 0;
+  left: 0;
+  background: url("../img/icons/bg_rating.svg") 0 0 no-repeat;
+  z-index: 1;
+  background-size: 85px 100%; }
+
+/* line 109, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+.rating__activeline {
+  position: absolute;
+  width: 0px;
+  height: 14px;
+  top: 0;
+  left: 0;
+  background: url("../img/icons/bg_rating_active.svg") 0 0 no-repeat;
+  z-index: 2;
+  background-size: 85px 100%; }
+
+/* line 110, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+.rating__value {
+  display: inline-block;
+  color: #1b3139;
+  font-size: 14px;
+  line-height: 13px;
+  vertical-align: middle; }
+
+/* line 114, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+.quantity {
+  position: relative;
+  width: 73px;
+  height: 47px;
+  border: 1px solid #cfcfcf;
+  background-color: #ffffff; }
+
+/* line 115, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+.quantity__input {
+  height: 45px;
+  width: 50px;
+  text-align: center;
+  color: #101010;
+  font-weight: 300; }
+
+/* line 116, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+.quantity__btn {
+  position: absolute;
+  top: 11px;
+  right: 15px;
+  cursor: pointer; }
+  /* line 117, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .quantity__btn:before {
+    font-size: 25px;
+    display: inline-block;
+    line-height: 10px;
+    color: #a9a9a9; }
+  /* line 119, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .quantity__btn:hover:before {
+    color: #da0005; }
+  /* line 122, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .quantity__btn.dwn {
+    top: 25px; }
+
+/* line 128, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+.category-params-item-price-table {
+  margin-bottom: 25px; }
+  /* line 130, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .category-params-item-price-table .cell:first-child {
+    padding-right: 15px;
+    position: relative; }
+    /* line 131, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+    .category-params-item-price-table .cell:first-child:after {
+      content: '-';
+      position: absolute;
+      right: -4px;
+      top: 8px;
+      font-size: 20px; }
+  /* line 133, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .category-params-item-price-table .cell:last-child {
+    padding-left: 15px; }
+  /* line 134, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .category-params-item-price-table .cell input {
+    height: 37px;
+    border: 2px solid #393939;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    color: #393939;
+    font-weight: 500;
+    width: 100%; }
+
+/* line 137, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+.category-params-item-price-range {
+  margin: 0 12px 40px 12px;
+  background-color: #c9cecf;
+  height: 2px;
+  position: relative; }
+  /* line 138, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .category-params-item-price-range .ui-slider-range {
+    background-color: #000;
+    height: 2px;
+    position: relative; }
+  /* line 139, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .category-params-item-price-range .ui-slider-handle {
+    width: 23px;
+    height: 28px;
+    border: 3px solid #fbfbfb;
+    background-color: #ea5922;
+    display: block;
+    position: absolute;
+    top: -14px;
+    margin-left: -12px;
+    cursor: pointer; }
+    /* line 140, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+    .category-params-item-price-range .ui-slider-handle span {
+      position: absolute;
+      bottom: -18px;
+      left: 50%;
+      width: 50px;
+      text-align: center;
+      font-size: 10px;
+      margin-left: -25px;
+      font-weight: 500;
+      color: #94a6aa; }
+
+/* line 145, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+.form__info {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  right: 0;
+  top: 0;
+  line-height: 60px;
+  text-align: center;
+  color: #888;
+  z-index: 2;
+  font-size: 14px; }
+  @media (max-width: 767.98px) {
+    /* line 145, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+    .form__info {
+      width: 50px;
+      height: 50px;
+      line-height: 50px; } }
+
+/* line 148, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+.form-range-line {
+  position: relative;
+  height: 5px;
+  border-radius: 0 0 4px 4px;
+  background-color: #e0e0e0;
+  margin: -2px 0px 0px 0px; }
+  /* line 149, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .form-range-line .ui-slider-range {
+    background-color: #093454;
+    height: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0 0 4px 4px; }
+  /* line 150, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .form-range-line .ui-slider-handle {
+    background: url("../img/icons/range.svg") 0 0 no-repeat;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    margin: -9px 0px 0px -14px;
+    top: 0;
+    left: 0;
+    cursor: pointer; }
+  /* line 151, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+  .form-range-line .ui-state-hover {
+    background: url("../img/icons/range_a.svg") 0 0 no-repeat; }
+
+/* line 153, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+.form-range-values {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+  justify-content: space-between;
+  padding: 14px 0px 0px 0px; }
+
+/* line 154, /home/fedor/html/html_practics_1/#source/scss/forms.scss */
+.form-range-values__item {
+  font-size: 12px;
+  color: #888; }
+
+/* line 6, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+.row:after {
+  display: block;
+  content: "";
+  clear: both; }
+
+/* line 11, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+.rub:after {
+  content: "₽"; }
+
+/* line 15, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/* line 24, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+ol.counter {
+  list-style-type: none;
+  counter-reset: item; }
+  /* line 27, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+  ol.counter li {
+    position: relative;
+    padding: 0px 0px 0px 45px; }
+    /* line 30, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+    ol.counter li:before {
+      counter-increment: item;
+      content: counter(item);
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #818181;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+      line-height: 26px;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      border: 1px solid #4274bb; }
+
+/* line 49, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+.ellipsis {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+/* line 56, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+.es {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+/* line 62, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+.table {
+  display: table;
+  font-size: 0;
+  width: 100%; }
+
+/* line 68, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+.trow {
+  display: table-row; }
+
+/* line 71, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+.cell {
+  display: table-cell; }
+  /* line 73, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+  .cell.full {
+    width: 100%; }
+
+/* line 78, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+.ibg {
+  position: relative; }
+  /* line 80, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+  .ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover; }
+
+/* line 91, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+body.ie .ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+/* line 96, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+body.ie .ibg img {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden; }
+
+/* line 105, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+.video {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 56.25%; }
+  /* line 110, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+  .video video,
+  .video iframe,
+  .video object,
+  .video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+/* line 122, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+.videobg video,
+.videobg iframe,
+.videobg object,
+.videobg embed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover; }
+
+/* line 139, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+.moretext {
+  overflow: hidden; }
+
+/* line 142, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+.moretext__more {
+  cursor: pointer; }
+  /* line 144, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+  .moretext__more span {
+    font-style: normal; }
+    /* line 146, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+    .moretext__more span:first-child {
+      display: block; }
+    /* line 149, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+    .moretext__more span:last-child {
+      display: none; }
+  /* line 154, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+  .moretext__more.active span {
+    font-style: normal; }
+    /* line 156, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+    .moretext__more.active span:first-child {
+      display: none; }
+    /* line 159, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+    .moretext__more.active span:last-child {
+      display: block; }
+
+/* line 166, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+.graystyle {
+  -webkit-transition: all 0.8s ease 0s;
+  -moz-transition: all 0.8s ease 0s;
+  -ms-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1); }
+
+/* line 173, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+.graystyleoff {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  -o-filter: grayscale(0); }
+
+/* line 180, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+.slick-slider {
+  position: relative; }
+  /* line 182, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+  .slick-slider .slick-track,
+  .slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  /* line 190, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+  .slick-slider .slick-list {
+    position: relative;
+    overflow: hidden;
+    width: 100%; }
+  /* line 195, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+  .slick-slider .slick-track {
+    position: relative;
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 0; }
+  /* line 200, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+  .slick-slider .slick-slide {
+    position: relative; }
+
+/* line 221, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+.tab__item {
+  display: none; }
+  /* line 223, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+  .tab__item.active {
+    display: block; }
+
+/* line 228, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+.mirror {
+  transform: scale(-1, 1); }
+
+/* line 232, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+.nicescroll-rails {
+  z-index: 1000 !important; }
+
+/* line 238, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+.gm-style-iw-t {
+  opacity: 0; }
+
+/* line 241, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+.baloon {
+  opacity: 1;
+  right: -7px !important;
+  bottom: 80px !important; }
+  /* line 245, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+  .baloon button {
+    display: none !important; }
+  /* line 248, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+  .baloon:after {
+    display: none !important; }
+
+/* line 252, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+.baloon-style {
+  display: none; }
+
+/* line 255, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+.baloon-content.gm-style-iw {
+  opacity: 1;
+  border-radius: 0px !important;
+  max-width: 300px !important;
+  padding: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  overflow: visible !important; }
+  /* line 263, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+  .baloon-content.gm-style-iw > .gm-style-iw-d {
+    overflow: hidden !important;
+    max-width: none !important; }
+  /* line 267, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+  .baloon-content.gm-style-iw:after {
+    display: none !important; }
+
+/* line 271, /home/fedor/html/html_practics_1/#source/scss/ui.scss */
+.baloon-close {
+  top: 18px !important; }
+
+/* line 2, /home/fedor/html/html_practics_1/#source/scss/popup.scss */
+.popup {
+  -webkit-overflow-scrolling: touch;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  position: fixed !important;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 100; }
+  /* line 14, /home/fedor/html/html_practics_1/#source/scss/popup.scss */
+  .popup.active .popup-content {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1); }
+  /* line 16, /home/fedor/html/html_practics_1/#source/scss/popup.scss */
+  .popup.show {
+    display: block; }
+    /* line 17, /home/fedor/html/html_practics_1/#source/scss/popup.scss */
+    .popup.show .popup-content {
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -webkit-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1); }
+
+/* line 20, /home/fedor/html/html_practics_1/#source/scss/popup.scss */
+.popup-table {
+  height: 100%;
+  table-layout: fixed; }
+  /* line 21, /home/fedor/html/html_practics_1/#source/scss/popup.scss */
+  .popup-table > .cell {
+    height: 100%;
+    vertical-align: middle;
+    padding: 30px 10px; }
+
+/* line 23, /home/fedor/html/html_practics_1/#source/scss/popup.scss */
+.popup-content {
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  max-width: 1230px;
+  margin: 0px auto;
+  background-color: #fff; }
+
+/* line 31, /home/fedor/html/html_practics_1/#source/scss/popup.scss */
+.popup-close {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  background: url("../img/icons/close.png") 0 0 no-repeat; }
+
+/* line 41, /home/fedor/html/html_practics_1/#source/scss/popup.scss */
+.popup-video .popup-close {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  top: 0;
+  right: 0; }
+
+/*
+	Стиль иконки бургера
+	.icon-menu{
+		display: block;
+		position: absolute;
+		top: 18px;
+		right: 10px;
+		width:30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 5;
+		span{@include anim(0.3s,0s);top: 8px;left: 0px;position: absolute;width: 100%;height: 2px;background-color: #000;
+			&:first-child{top: 0px;}
+			&:last-child{top: auto;bottom: 0px;}
+		}
+		&.active{
+			span{@include scale(0);
+				&:first-child{@include rotate(-45deg);top: 8px;}
+				&:last-child{@include rotate(45deg);bottom: 8px;}
+			}
+		}
+	}
+*/
+/* line 27, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 50;
+  left: 0;
+  top: 35px; }
+  /* line 33, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+  .header .header__row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 0;
+    justify-content: center;
+    align-items: center;
+    height: 85px; }
+  @media (max-width: 767px) {
+    /* line 27, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+    .header {
+      top: 15px; } }
+  /* line 53, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+  .header .menu__list {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 0; }
+  /* line 57, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+  .header li {
+    position: relative;
+    padding: 0px 35.5px; }
+    /* line 60, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+    .header li:nth-child(2) {
+      padding: 0px 110px 0px 35.5px; }
+    /* line 61, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+    .header li:nth-child(3) {
+      padding: 0px 35.5px 0px 110px; }
+    /* line 62, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+    .header li:after {
+      content: '';
+      width: 2px;
+      height: 2px;
+      background-color: #4d4959;
+      border-radius: 50%;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin: -1.5px 0px 0px 0px; }
+    /* line 74, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+    .header li:last-child:after {
+      display: none; }
+    /* line 77, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+    .header li:nth-child(2):after {
+      display: none; }
+  /* line 80, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+  .header .menu__link {
+    color: #4d4959;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.6px; }
+  /* line 89, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+  .header .header__logo {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate3d(-50%, 0px, 0px);
+    -webkit-transform: translate3d(-50%, 0px, 0px);
+    -ms-transform: translate3d(-50%, 0px, 0px);
+    -o-transform: translate3d(-50%, 0px, 0px);
+    -moz-transform: translate3d(-50%, 0px, 0px);
+    z-index: 2; }
+  @media (max-width: 767px) {
+    /* line 99, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+    .header .menu__body {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      top: 0;
+      left: 0;
+      background-color: #4d4959;
+      transform: translate3d(0px, -100%, 0px);
+      -webkit-transform: translate3d(0px, -100%, 0px);
+      -ms-transform: translate3d(0px, -100%, 0px);
+      -o-transform: translate3d(0px, -100%, 0px);
+      -moz-transform: translate3d(0px, -100%, 0px);
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -ms-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+      padding: 150px 0px 20px 0px; }
+      /* line 110, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+      .header .menu__body.active {
+        transform: translate3d(0px, 0px, 0px);
+        -webkit-transform: translate3d(0px, 0px, 0px);
+        -ms-transform: translate3d(0px, 0px, 0px);
+        -o-transform: translate3d(0px, 0px, 0px);
+        -moz-transform: translate3d(0px, 0px, 0px); }
+    /* line 115, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+    .header .menu__list {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      /* line 119, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+      .header .menu__list li {
+        padding: 0px 0px 45px 0px; }
+        /* line 121, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+        .header .menu__list li:nth-child(2), .header .menu__list li:nth-child(3) {
+          padding: 0px 0px 45px 0px; }
+        /* line 124, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+        .header .menu__list li:last-child {
+          padding: 0px; }
+        /* line 127, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+        .header .menu__list li:after {
+          content: '';
+          width: 4px;
+          height: 4px;
+          background-color: #fff;
+          right: 50%;
+          top: 40px;
+          margin: 0px -2px 0px 0px; }
+        /* line 137, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+        .header .menu__list li:nth-child(2):after {
+          display: block; }
+    /* line 141, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+    .header .menu__link {
+      color: #fff;
+      font-size: 20px; } }
+
+@media (max-width: 767px) {
+  /* line 148, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+  .icon-menu {
+    display: block;
+    position: absolute;
+    top: 24px;
+    right: 10px;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 2; }
+    /* line 158, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+    .icon-menu span {
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -ms-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+      top: 8px;
+      left: 0px;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #4d4959; }
+      /* line 159, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+      .icon-menu span:first-child {
+        top: 0px; }
+      /* line 160, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+      .icon-menu span:last-child {
+        top: auto;
+        bottom: 0px; }
+    /* line 163, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+    .icon-menu.active span {
+      -moz-transform: scale(0);
+      -ms-transform: scale(0);
+      -webkit-transform: scale(0);
+      -o-transform: scale(0);
+      transform: scale(0);
+      background-color: #fff; }
+      /* line 164, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+      .icon-menu.active span:first-child {
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: 8px; }
+      /* line 165, /home/fedor/html/html_practics_1/#source/scss/header.scss */
+      .icon-menu.active span:last-child {
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        bottom: 8px; } }
+
+/* line 76, /home/fedor/html/html_practics_1/#source/scss/style.scss */
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+  flex-direction: column; }
+
+/* line 85, /home/fedor/html/html_practics_1/#source/scss/style.scss */
+.main-screen {
+  flex: 1 0 100%;
+  position: relative; }
+  /* line 88, /home/fedor/html/html_practics_1/#source/scss/style.scss */
+  .main-screen__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
+
+/*# sourceMappingURL=style.css.map */
